@@ -1,0 +1,27 @@
+package part7.part7_1;
+import java.util.*;
+import java.util.function.*;
+
+public class RefactorStep2 {
+    public static void main(String[] args) {
+        List<String> cities = Arrays.asList("Москва", "Берлин", "Токио", "Нью-Йорк", "Париж");
+        cities.sort(Comparator.comparingInt(String::length));
+        cities.forEach(System.out::println);
+        Function<String, String> toUpper = String::toUpperCase;
+        Predicate<String> isLong = s -> s.length() > 5; // Ссылкой нельзя
+        Function<String, String> exclaim = s -> s + "!"; // Ссылкой нельзя
+        Supplier<List<String>> listFactory = ArrayList::new;
+
+        List<String> result = listFactory.get();
+        for (String city : cities) if (isLong.test(city)) result.add(toUpper.apply(city));
+        System.out.println("Длинные города: " + result);
+        
+        /*
+         Этап 3 - Объяснение:
+         - isLong (s -> s.length() > 5) нельзя заменить: выражение содержит оператор сравнения и литерал.
+         Метода без параметров, возвращающего именно эту конкретную логику проверок для String, нет.
+         - exclaim (s -> s + "!") тоже самое. Строковая конкатенация со специфичным литералом 
+         не мапится в одиночную ссылку.
+        */
+    }
+}
