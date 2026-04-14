@@ -159,18 +159,37 @@ practice2/
 │   ├── ЗАПУСК_КЛАССОВ.md           ← полные имена классов для Run
 │   ├── ПРОВЕРКА_ПРЕПОДАВАТЕЛЮ.md  ← javac, upstream diff
 │   └── slides/                   ← веб-презентация (ООП + идеи практики)
+│       ├── index.html
+│       └── README.md
+├── .idea/
 ├── answers/
 │   ├── task1_2_access_table.md
 │   ├── task2_4_abstract_vs_interface.md
 │   ├── part9_jshell.md
 │   └── part10_questions.md
-├── company/                    ← задание 1.2
+├── company/                    ← задание 1.2 (company.core / company.app)
 ├── part1/
-│   ├── part1_1/                ← задание 1.1
-│   └── part1_3/                ← задание 1.3
+│   ├── part1_1/                ← пакет part1.part1_1 — задание 1.1
+│   └── part1_3/                ← пакет part1.part1_3 — задание 1.3
 ├── part2/
-│   ├── part2_1/                ← задание 2.1
-... и так далее ...
+│   ├── part2_1/                ← пакет part2.part2_1 — задание 2.1
+│   ├── part2_2/                ← пакет part2.part2_2 — задание 2.2
+│   └── part2_3/                ← пакет part2.part2_3 — задание 2.3
+├── part3/
+│   ├── part3_1/                ← задание 3.1
+│   └── part3_2/                ← задание 3.2
+├── part4/
+│   ├── part4_1/                ← задание 4.1
+│   └── part4_2/                ← задание 4.2
+├── part5/
+│   ├── part5_1/                ← задание 5.1
+│   └── part5_2/                ← задание 5.2
+├── part6/
+│   └── part6_1/                ← задание 6.1
+├── part7/
+│   ├── part7_1/                ← задание 7.1
+│   ├── part7_2/                ← задание 7.2
+│   └── part7_3/                ← задание 7.3
 └── part8/
     └── part8_1/                ← задание 8.1
 ```
