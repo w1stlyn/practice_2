@@ -154,14 +154,6 @@ ssh -T git@github.com
 practice2/
 ├── README.md
 ├── .gitignore
-├── practice2.iml
-├── docs/
-│   ├── ЗАПУСК_КЛАССОВ.md           ← полные имена классов для Run
-│   ├── ПРОВЕРКА_ПРЕПОДАВАТЕЛЮ.md  ← javac, upstream diff
-│   └── slides/                   ← веб-презентация (ООП + идеи практики)
-│       ├── index.html
-│       └── README.md
-├── .idea/
 ├── answers/
 │   ├── task1_2_access_table.md
 │   ├── task2_4_abstract_vs_interface.md
